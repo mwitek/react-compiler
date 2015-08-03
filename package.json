@@ -24,17 +24,16 @@
   },
   "homepage": "https://github.com/mwitek/node-coffee-haml-server#readme",
   "dependencies": {
-    "gulp": "^3.9.0"
-  },
-  "devDependencies": {
     "bower": "^1.3.4",
     "coffee-script": "^1.9.3",
     "coffeeify": "^0.6.0",
     "debowerify": "^0.7.1",
+    "gulp": "^3.9.0",
     "gulp-bower": "0.0.3",
     "gulp-bower-files": "^0.2.7",
     "gulp-browserify": "~0.4.6",
     "gulp-cjsx": "^3.0.0",
+    "gulp-connect": "^2.2.0",
     "gulp-file-include": "^0.13.7",
     "gulp-filter": "^2.0.2",
     "gulp-flatten": "^0.1.0",
@@ -42,10 +41,13 @@
     "gulp-jade": "^1.0.1",
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^0.7.3",
-    "gulp-server-livereload": "^1.4.0",
     "gulp-size": "~0.1.2",
     "gulp-useref": "^0.4.4",
-    "gulp-util": "~2.2.9"
+    "gulp-util": "~2.2.9",
+    "react-tools": "^0.11.2",
+    "gulp-server-livereload": "^1.4.0"
+  },
+  "devDependencies": {
   },
   "engines": {
     "node": ">=0.10.0"

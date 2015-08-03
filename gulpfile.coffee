@@ -18,6 +18,7 @@ class GulpBuilder
     @flatten = require("gulp-flatten")
     @useref = require("gulp-useref")
     @server = require( 'gulp-server-livereload')
+    @connect = require('gulp-connect')
     @cjsx = require('gulp-cjsx')
     @options = {}
     
@@ -30,6 +31,7 @@ class GulpBuilder
     @gulp.task "haml", @compileHAML
     @gulp.task "images", @compileImages
     @gulp.task "connect", @connectToServer
+    @gulp.task "serveprod", @connectToProdServer
     @gulp.task "jade", @compileJade
     @gulp.task "watch", @watchGulpTask
     @gulp.task "cjsx", @compileCJSX
@@ -124,6 +126,12 @@ class GulpBuilder
       .src("app/images/*")
       .pipe(@gulp.dest("dist/images"))
       .pipe(@size())
+      
+  connectToProdServer: =>
+    @connect.server
+      root: 'dist'
+      port: process.env.PORT || 5000
+      livereload: false
   
   connectToServer: =>
     return @gulp.src('dist')
