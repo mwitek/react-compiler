@@ -1,0 +1,53 @@
+{
+  "name": "node-coffee-haml-server",
+  "version": "0.0.1",
+  "description": "Boilerplate node app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mwitek/node-coffee-haml-server.git"
+  },
+  "keywords": [
+    "node",
+    "haml",
+    "jade",
+    "coffeeScript",
+    "live-reload",
+    "runtime compiling"
+  ],
+  "author": "Matthew Witek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mwitek/node-coffee-haml-server/issues"
+  },
+  "homepage": "https://github.com/mwitek/node-coffee-haml-server#readme",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "bower": "^1.3.4",
+    "coffee-script": "^1.9.3",
+    "coffeeify": "^0.6.0",
+    "debowerify": "^0.7.1",
+    "gulp-bower": "0.0.3",
+    "gulp-bower-files": "^0.2.7",
+    "gulp-browserify": "~0.4.6",
+    "gulp-cjsx": "^3.0.0",
+    "gulp-file-include": "^0.13.7",
+    "gulp-filter": "^2.0.2",
+    "gulp-flatten": "^0.1.0",
+    "gulp-haml-coffee": "0.0.6",
+    "gulp-jade": "^1.0.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.3",
+    "gulp-server-livereload": "^1.4.0",
+    "gulp-size": "~0.1.2",
+    "gulp-useref": "^0.4.4",
+    "gulp-util": "~2.2.9"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
