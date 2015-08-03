@@ -3,10 +3,18 @@ var Transformer;
 Transformer = React.createClass({
   getInitialState: function() {
     return {
-      input: '/* add jsx here */',
+      input: "/* add jsx here */\n\nvar App = (\n  <Form>\n    <FormRow>\n      <FormLabel />\n      <FormInput />\n    </FormRow>\n  </Form>\n);",
       output: '',
       err: ''
     };
+  },
+  componentDidMount: function() {
+    var code;
+    code = this.state.input;
+    return this.setState({
+      output: JSXTransformer.transform(code).code,
+      err: ''
+    });
   },
   update: function(e) {
     var code, err;

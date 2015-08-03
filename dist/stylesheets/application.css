@@ -7250,3 +7250,7 @@ th.hide-for-touch {
   /* line 489, /Users/ytech/projects/react-compiler/app/bower_components/foundation/scss/foundation/components/visibility */
   .show-for-print {
     display: none !important; } }
+
+/* line 4, /Users/ytech/projects/react-compiler/app/stylesheets/application.scss */
+textarea {
+  height: 235px; }

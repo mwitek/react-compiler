@@ -1,11 +1,27 @@
 Transformer = React.createClass
   getInitialState: ->
     return {
-      input: '/* add jsx here */'
+      input: """
+      /* add jsx here */\n
+      var App = (
+        <Form>
+          <FormRow>
+            <FormLabel />
+            <FormInput />
+          </FormRow>
+        </Form>
+      );
+      """
       output: ''
       err: ''
     }
-  
+    
+  componentDidMount: ->
+    code = @state.input
+    @setState
+      output: JSXTransformer.transform(code).code
+      err: ''
+      
   update: (e) ->
     code = e.target.value
     try
